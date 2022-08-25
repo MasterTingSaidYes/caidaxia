@@ -23,7 +23,7 @@ jobs:
 
       - uses: manyuanrong/setup-ossutil@v2.0
         with:
-          endpoint: oss-cn-shanghai.aliyuncs.com
+          endpoint: oss-cn-hangzhou.aliyuncs.com
           access-key-id: ${{ secrets.ACCESS_KEY_ID }}
           access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
       - run: ossutil cp -rf ./docs/.vitepress/dist/ oss://caidaxia/
